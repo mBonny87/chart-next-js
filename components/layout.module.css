@@ -1,0 +1,11 @@
+.container {
+  @apply grid grid-rows-6 h-screen;
+}
+
+.title {
+  @apply row-span-1 flex justify-center items-center;
+}
+
+.chart {
+  @apply row-span-5 w-full h-full flex justify-center items-center;
+}
