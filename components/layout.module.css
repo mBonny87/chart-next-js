@@ -2,8 +2,16 @@
   @apply grid grid-rows-6 h-screen;
 }
 
+.header {
+  @apply grid grid-cols-3 items-center;
+}
+
+.backHome {
+  @apply col-span-1 justify-self-start ml-16 font-semibold text-cyan-500;
+}
+
 .title {
-  @apply row-span-1 flex justify-center items-center;
+  @apply col-span-1 justify-self-center font-semibold text-2xl;
 }
 
 .chart {

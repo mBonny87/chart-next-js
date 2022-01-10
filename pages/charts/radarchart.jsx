@@ -2,6 +2,7 @@ import { Radar } from "react-chartjs-2";
 import Layout from "../../components/layout";
 
 import faker from "faker";
+import Head from "next/head";
 const labels = [
   "Language acquisition",
   "Innovative thinking",
@@ -14,6 +15,9 @@ const labels = [
 export default function RadarChart() {
   return (
     <Layout title="RadarChart">
+      <Head>
+        <title>Radar Chart</title>
+      </Head>
       <Radar
         width="700px"
         height="700px"

@@ -2,6 +2,7 @@ import { Bar } from "react-chartjs-2";
 import Layout from "../../components/layout";
 
 import faker from "faker";
+import Head from "next/head";
 const labels = [
   "00:00",
   "01:00",
@@ -21,6 +22,9 @@ const labels = [
 export default function BarChart() {
   return (
     <Layout title="BarChart">
+      <Head>
+        <title>Bar Chart</title>
+      </Head>
       <Bar
         width="1700px"
         height="700px"

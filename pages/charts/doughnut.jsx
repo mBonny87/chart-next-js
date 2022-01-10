@@ -2,6 +2,7 @@ import { Doughnut } from "react-chartjs-2";
 import Layout from "../../components/layout";
 
 import faker from "faker";
+import Head from "next/head";
 const labels = [
   "Kick Off Meeting",
   "Analysis",
@@ -14,6 +15,9 @@ const labels = [
 export default function DoughnutChart() {
   return (
     <Layout title="Doughnut Chart">
+      <Head>
+        <title>Doughnut Chart</title>
+      </Head>
       <Doughnut
         width="700px"
         height="700px"

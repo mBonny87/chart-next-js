@@ -12,6 +12,8 @@ import {
   Legend,
 } from "chart.js";
 import faker from "faker";
+import Head from "next/head";
+import Link from "next/link";
 
 ChartJS.register(
   CategoryScale,
@@ -42,6 +44,9 @@ const labels = [
 export default function LineChart() {
   return (
     <Layout title="LineChart">
+      <Head>
+        <title>Line Chart</title>
+      </Head>
       <Line
         width="1700px"
         height="700px"
