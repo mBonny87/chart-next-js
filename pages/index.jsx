@@ -51,7 +51,9 @@ export default function Home() {
               <a
                 ref={x.hover[0]}
                 className={
-                  x.hover[1] ? "transition ease-in-out scale-150 z-10" : ""
+                  x.hover[1]
+                    ? "transition ease-in-out duration-500 scale-150 z-10"
+                    : "transition ease-in-out duration-500 scale-100 z-0"
                 }
               >
                 <div className="flex flex-col justify-center items-center">
