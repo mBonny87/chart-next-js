@@ -34,7 +34,10 @@ export default function Home() {
   ];
 
   return (
-    <div className="grid grid-rows-6 h-screen">
+    <div
+      className="grid grid-rows-6 h-screen min"
+      style={{ minWidth: "730px" }}
+    >
       <div className="row-span-1 text-center self-center font-medium text-2xl">
         Select one of these charts
       </div>
